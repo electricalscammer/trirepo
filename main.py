@@ -103,7 +103,7 @@ async def account_login(bot: Client, m: Message):
     else:
         CR = raw_text3
 
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/govinde_lectrical```\n\nor Send **no**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/Electric Hacker```\n\nor Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
