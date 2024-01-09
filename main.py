@@ -38,7 +38,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["help"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello Im txt File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or    Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your    Videos.\n\n**Bot made by 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇**")
+    editable = await m.reply_text("Hello Im txt File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or    Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your    Videos.\n\n**Bot made by Electric Hacker**")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -54,7 +54,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hi!, I'm PyroBot. I Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Now Send .txt file**")
+    editable = await m.reply_text("**Hi!, I'm Electric Hacker. I Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Now Send .txt file**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -103,7 +103,7 @@ async def account_login(bot: Client, m: Message):
     else:
         CR = raw_text3
 
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/Abhi-04-08```\n\nor Send **no**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/govinde_lectrical```\n\nor Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
@@ -312,8 +312,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n"
                 prog = await m.reply_text(Show)
-                cc = f'**File Name »** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.mp4\n**Batch »** {raw_text0}\n\n**{CR}**'
-                cc1 =f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.pdf\n**Batch »** {raw_text0}\n\n**{CR}**'
+                cc = f'**[🎬]Vid_Id :** {name1} [Electric Hacker].mp4\n**Batch :** {raw_text0}\n\n**{CR}**'
+                cc1 =f'**[📕]File_Id :** {str(count).zfill(3)}\n**Topic :** {name1} [Electric Hacker].pdf\n**Batch :** {raw_text0}\n\n**{CR}**'
                 if cmd == "pdf" or "drive" in url:
                     try:
                         ka=await helper.download(url,name)
@@ -341,7 +341,7 @@ async def account_login(bot: Client, m: Message):
                         reply = await m.reply_text(f"Uploading - ```{name}```")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.pdf\n**Batch »** {raw_text0}\n\n**{CR}**')
+                        await m.reply_document(ka, caption=f'**File No. :** {str(count).zfill(3)}\n**Topic :** {name1} [Electric Hacker].pdf\n**Batch :** {raw_text0}\n\n**{CR}**')
                         count+=1
                         # time.sleep(1)
                         await reply.delete (True)
@@ -366,11 +366,11 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")    
+    await m.reply_text("Done◽")    
     
     
     
-@bot.on_message(filters.command(["jw"]))
+@bot.on_message(filters.command(["gk"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -477,7 +477,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'    
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
+            cc = f'**Topic »** {name1}.mkv\n**Batch :** {raw_text0}\n**[📂]File_Id :** {str(count).zfill(3)}'
             if "pdf" in url:
                 cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
