@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 def hello_world():
 
-    return '🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇'
+    return 'Electric Hacker'
 
 if __name__ == "__main__":
 
